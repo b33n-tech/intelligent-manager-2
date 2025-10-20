@@ -1,1 +1,2 @@
+streamlit>=1.26
 networkx>=3.1
