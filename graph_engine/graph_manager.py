@@ -20,9 +20,11 @@ class GraphEngine:
         return [self.graph.nodes[n]['title'] for n in ready]
 
     def show_graph(self):
+        lines = []
         for node in self.graph.nodes:
             deps = list(self.graph.predecessors(node))
-            print(f"{self.graph.nodes[node]['title']} depends on {deps}")
+            lines.append(f"{self.graph.nodes[node]['title']} depends on {deps}")
+        return "\n".join(lines)
 
     def save_snapshot(self):
         data = {
