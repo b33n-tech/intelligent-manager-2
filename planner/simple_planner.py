@@ -1,4 +1,4 @@
-def plan_next_actions(graph_engine, max_actions=3):
+def plan_next_actions(graph_engine, max_actions=5):
     """
     Retourne les prochaines actions à exécuter.
     """
