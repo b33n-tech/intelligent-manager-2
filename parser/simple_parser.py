@@ -4,7 +4,6 @@ def parse_tasks(text):
     """
     Transforme un texte brut en liste de tâches simples.
     """
-    # Séparer les phrases par '/' ou points
     phrases = re.split(r'[./]', text)
     tasks = []
     for i, phrase in enumerate(phrases):
